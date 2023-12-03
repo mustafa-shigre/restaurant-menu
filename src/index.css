@@ -1,13 +1,85 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.color-body{
+  height: 100vh;
+  background-color: #f8f8f8;
+}
+.title{
+  color: #224f61;
+  font-family: 'Almarai', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 64px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.under-line{
+  height: 1px;
+  width: 100px;
+  border-radius: 10px;
+  border: 2px solid ;
+
+}
+.font{
+  font-family: 'Almarai', sans-serif;
+  font-family: 'Amiri', serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+}
+.rectangle{
+  height: 600px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow:1px 4px 4px 1px rgba(85, 85, 85, .25) ;
+}
+.dates-count{
+  color: #555555;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.btn-style{
+  width: 200px;
+  border-radius: 8%;
+  color: white;
+  background-color: #224f61;
+}
+.img-avatar{
+  height: 70px;
+  width: 70px;
+  border-radius:50%;
+}
+.mt-0{
+  margin-top: 0;
+}
+.img-card {
+  width: 252px;
+  height: 180px;
+  border-radius: 5px;
+}
+
+.item-des{
+  color: black;
+  font-family: Almarai;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0;
+
+}
+
+.item-title{
+  color: black;
+  font-family: Almarai;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+.item-price{
+  color: #ffaf00;
+  font-family: Almarai;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 20px;
+
 }

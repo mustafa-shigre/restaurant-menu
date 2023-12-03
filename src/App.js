@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useEffect, useState, useSyncExternalStore } from 'react';
+import {Container, Row } from 'react-bootstrap'
+import Cnav from './component/Cnav';
+import Cheader from './component/Cheader';
+import Category from './component/Category'
+import Itemscard from './component/Itemscard';
+import { data } from './data';
 function App() {
+  const [Itemsdata,setitems] = useState(data);
+  const filtercategory = (Category) =>{
+    if(Category === "الكل"){
+      setitems(data);
+    }
+    else{
+   const  newarr = data.filter((index)=> index.category === Category)
+   setitems(newarr);
+  }
+}
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="color-body font">
+      <Row>
+        <Container>
+          <Cnav/>
+          <Cheader/>
+          <Category filtercategory={filtercategory} />
+          <Container>          
+          <Itemscard Itemsdata={Itemsdata}/>
+          </Container>
+          
+        </Container> 
+      </Row>
     </div>
   );
 }
